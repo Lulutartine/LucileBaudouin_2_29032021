@@ -1,0 +1,159 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+}
+
+h2 {
+    display: block;
+    font-weight: bold;
+    font-size: medium;
+}
+
+h3 {
+    display: block;
+    font-weight: bold;
+    font-size: medium;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+section {
+    
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    justify-content: right;
+}
+
+ul { 
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: flex;
+}
+
+form {
+    display: flex;
+}
+
+input {
+ 
+}
+
+input[type="button" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor:pointer;
+    color:white;
+    background-color:#0065FC;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 0px;
+    border-style:none;
+    border-color: #0065FC;
+    border-image: Opx;
+}
+
+input[type="search" i] {
+    padding: 0px
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    padding-right: 150px;
+}
+
+section ul {
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-width: 1px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+section form ul li:first-child {
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+}
+
+section form input[type="search"] {
+    border-color: transparent;
+    margin-left: 6px;
+    padding: 10px;
+}
+
+section form input[type="button"] {
+    background-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+
+#filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#filtres2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greyblock {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.greyblock2 {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.grillesix {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vignettehebergement {
+    image-rendering: auto;
+    border-color: white;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.titrevignetteh {
+    background-color: white;
+}
