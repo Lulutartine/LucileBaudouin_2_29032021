@@ -29,71 +29,46 @@ h3 {
     font-size: medium;
 }
 
+ul { 
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: flex;
+    align-items: center;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     width: 40%;
 }
 
-section {
-    
+header nav li {
+    margin: 15px;
 }
 
-main {
-    display: flex;
+header nav a {
+    color :black;
+    cursor: pointer;
+    text-decoration:none;
 }
 
-aside {
-    justify-content: right;
-}
-
-ul { 
-    list-style-type: none;
-    padding-inline-start: 0px;
-    display: flex;
+header nav a:hover, :active{
+    color:#0065FC;
+    cursor: pointer;
+    text-decoration:none;
+    border-top-color: #0065FC;
+    border-top-style: solid;
+    border-top-width: 2px;
+    padding-top: 35px;
 }
 
 form {
     display: flex;
-}
-
-input {
- 
-}
-
-input[type="button" i] {
-    appearance: auto;
-    user-select: none;
-    white-space: pre;
-    align-items: flex-start;
-    text-align: center;
-    cursor:pointer;
-    color:white;
-    background-color:#0065FC;
-    box-sizing: border-box;
-    padding: 1px 6px;
-    border-width: 0px;
-    border-style:none;
-    border-color: #0065FC;
-    border-image: Opx;
-}
-
-input[type="search" i] {
-    padding: 0px
-}
-
-footer {
-    background-color: #F2F2F2;
-    display: flex;
-    padding-right: 150px;
-}
-
-section ul {
-    border-style: solid;
-    border-color: #F2F2F2;
-    border-width: 1px;
-    border-radius: 15px;
-    margin: 10px;
 }
 
 section form ul li:first-child {
@@ -107,36 +82,103 @@ section form input[type="search"] {
     border-color: transparent;
     margin-left: 6px;
     padding: 10px;
+    font: unset;
+    margin-right: 10px;
 }
 
 section form input[type="button"] {
     background-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 10px;
+    padding: 12px;
+    border-style:none;
+    font: unset;
+    color: white;
+    cursor: pointer;
 }
 
-#filtres {
+section ul ul {
     display: flex;
-    flex-direction: row;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20px;
+    border-left-style: none;
+    justify-content: space-between;
+    padding-right: 10px;
     align-items: center;
 }
 
-#filtres2 {
+li.filtreicone {
+    display:flex;
+    background-color: #DEEBFF;
+    color:#0065FC;
+    border-radius: 17px;
+    padding: 9px;
+    height: 16px;
+    width: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+section ul li button {
+        appearance:inherit;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color:black;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor:pointer;
+        background-color:transparent;
+        box-sizing:;
+        margin: 0em;
+        font:unset;
+        padding: 1px 6px;
+        border-width: 0px;
+        border:transparent;
+        border-color:transparent;
+        border-image:none;
+        padding-left: 10px;
+}
+.fa-info:before {
+    content: "\f129";
+    display: flex;
+    background-color: transparent;
+    color: #0065FC;
+    border-color: #F2F2F2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 17px;
+    padding: 3px;
+    height: 10px;
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 12px 15px 0px;
+    font-size: x-small;
+}
+
+main {
     display: flex;
     justify-content: space-between;
 }
 
+main aside ul {
+    display: block;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 30%;
+}
 .greyblock {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 70%;
-}
-
-.greyblock2 {
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    width: 30%;
 }
 
 .grillesix {
@@ -156,4 +198,10 @@ section form input[type="button"] {
 
 .titrevignetteh {
     background-color: white;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    padding-right: 150px;
 }
