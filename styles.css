@@ -21,7 +21,7 @@ h2 {
     display: block;
     font-weight: bold;
     font-size: medium;
-    margin-block-start: 1em;
+    margin-block-start: 2em;
     margin-block-end: 0em;
 }
 
@@ -167,9 +167,11 @@ section ul li button {
 main {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 main section {
+    display: flex;
     justify-content:space-around;
     align-content: center;
     align-items: center;
@@ -198,14 +200,14 @@ main section ul li figure {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    height: 194px;
+    height: 225px;
     width: 218px;
 }
 
 main section ul li figure div {
     display:block;
     overflow: hidden;
-    height: 119px;
+    height: 124px;
     width: 218px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -306,6 +308,76 @@ aside figcaption p {
 
 aside figcaption p:last-child {
     margin-top: 30px;
+}
+
+section.activites {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+section.activites h2 {
+    padding-top: 9px;
+}
+
+section.activites ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.activites ul li {
+    display: flex;
+    align-items: baseline;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px lightgrey;
+    margin-bottom: 32px;
+}
+
+section.activites ul.vignettesx2 li {
+    height: 50%;
+}
+
+section.activites figure {
+    overflow:hidden;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+section.activites figure div {
+    height: 490px;
+    width: 280px;
+}
+
+section.activites ul.vignettex2 div {
+    height: 202px;
+}
+
+section.activites img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+section.activites figcaption {
+    margin: 2px;
+}
+
+section.activites figcaption h2 {
+    margin-block-start: 0px;
+    padding: 15px;
 }
 
 footer {
