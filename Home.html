@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <title>Reservia - Hébergement pour des vacances de rêve</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" >
@@ -10,7 +11,7 @@
 
 <body>
 <header>
-    <a href="Home.html"><img src="Images/logo/Reservia@3x.png" alt="logo reservia" title="Reservia" height="40%" width="40%"></a>
+    <a href="Home.html"><img src="Images/logo/Reservia@3x.png" alt="logo reservia" title="Reservia" width="40%"></a>
     <nav>
         <ul>
             <li><em><a href="#">Hébergements</a></em></li>
@@ -31,8 +32,8 @@
             </ul>
         </form>
 
-        <ul style="justify-content: space-between;width: 70%;">
-                <li><h2>Filtres</h2></li>   
+        <ul class="filtresresponsive">
+                <li><h2>Filtres</h2></li> 
                 <ul>
                     <li class="filtreicone"><i class="fas fa-money-bill-wave" aria-hidden="true"></i></li>
                     <li><button type="button"><em>Economique</em></button></li>
@@ -58,7 +59,7 @@
 <main>
     <section>
         <h2>Hébergements à Marseille</h2>
-            <ul>
+            <ul class="hebergementresponsive">
                 <li>
                     <figure>
                         <div><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de la cannebiere"></div>
@@ -118,7 +119,7 @@
                             <p><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color:#0065FC"></i><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i></p>
                         </figcaption>
                     </figure>
-                <li>
+                </li>
             </ul>
             <div>
         <h3>Afficher plus</h3>
@@ -141,7 +142,7 @@
                     <figure>
                         <div><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="au coeur de l'eau"></div>
                         <figcaption>
-                            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                            <h2>Au coeur de l'eau <br/>Chambres d'hôtes</h2>
                             <p>Nuit à partir de 71€</p>
                             <p><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color: #0065FC;"></i><i class="fas fa-star" aria-hidden="true" style="color:#0065FC"></i><i class="fas fa-star" aria-hidden="true" style="color:#F2F2F2;"></i></p>
                         </figcation>
@@ -161,8 +162,8 @@
     </aside>
 </main>
 
-<h2>Activités à Marseille</h2>
 <section class="activites">
+    <h2>Activités à Marseille</h2>
         <ul class="vignettex1">
             <li>
                 <figure>

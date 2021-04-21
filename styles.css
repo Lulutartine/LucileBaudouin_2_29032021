@@ -8,7 +8,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 h1 {
@@ -21,7 +20,7 @@ h2 {
     display: block;
     font-weight: bold;
     font-size: medium;
-    margin-block-start: 2em;
+    margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
@@ -70,6 +69,7 @@ header nav a:hover, :active {
 
 form {
     display: flex;
+    margin-bottom: 1em;
 }
 
 section form ul li:first-child {
@@ -77,6 +77,9 @@ section form ul li:first-child {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-width: 2px;
 }
 
 section form input[type="search"] {
@@ -96,6 +99,13 @@ section form input[type="button"] {
     font: unset;
     color: white;
     cursor: pointer;
+}
+
+section ul {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 section ul ul {
@@ -131,7 +141,7 @@ section ul li button {
         text-transform: none;
         text-indent: 0px;
         text-shadow: none;
-        display: inline-block;
+        display: flex;
         text-align: center;
         align-items: flex-start;
         cursor:pointer;
@@ -173,8 +183,7 @@ main {
 main section {
     display: flex;
     justify-content:space-around;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 70%;
@@ -183,8 +192,8 @@ main section {
 
 main section ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 main section li {
@@ -200,8 +209,6 @@ main section ul li figure {
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    height: 225px;
-    width: 218px;
 }
 
 main section ul li figure div {
@@ -274,8 +281,7 @@ aside figure {
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    height: 130px;
-    width: 308px;
+    width: 100%;
 }
 
 aside div {
@@ -409,4 +415,192 @@ footer a {
 
 footer a:hover, :active {
     color:#0065FC;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:hotpink;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: space-around;
+    }
+
+    section:first-of-type {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    section ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+    }
+
+    section ul ul {
+        display: flex;
+        border-color: #F2F2F2;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        border-left-style: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+
+    main {
+    display: flex;
+    }  
+    
+    aside {
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        width: auto;
+        margin-left: 0px;
+        margin-right:0px;
+        padding: 10px;
+    }
+
+    main section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color:transparent;
+    border-radius: 0px;
+    width: auto;
+    padding: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        background-color: transparent;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    section:first-of-type {
+        display:flex;
+        flex-direction: column;
+    }
+
+    section:first-of-type ul {
+        margin: 0px 9px 0px 0px;
+    }
+
+    section form input[type="search"] {
+        border-color: transparent;
+        margin-left: 0px;
+        padding: 10px 0px 10px 10px;
+        font: unset;
+        margin-right: 0px;
+    }
+
+    .filtresresponsive {
+        flex-wrap: wrap;
+    }
+
+    ul.filtresresponsive:first-child {
+        margin-right: 50%;
+    }
+
+    main {
+        flex-direction:column-reverse;
+    }
+
+    aside {
+        padding-top: 25px;
+    }
+
+    aside span {
+        padding: 0px 13px 0px 13px;
+    }
+
+    aside li {
+        padding: 7px;
+    }
+
+    main section {
+        margin: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    main ul.hebergementresponsive {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    main ul.hebergementresponsive div {
+        height: 114px;
+        width: 327px;
+    }
+
+    main ul.hebergementresponsive figcaption {
+        padding: 10px 0px 0px 0px;
+    }
+
+    main ul.hebergementresponsive figcaption h3 {
+        margin: 0px;
+    }
+
+    section.activites {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    section.activites h2 {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    section.activites ul.vignettex1 figure {
+        border-radius: 12px;
+        background-color: white;
+    }
+
+    section.activites ul.vignettex1 div {
+        height: 120px;
+        width: 340px;
+    }
+
+    section.activites ul.vignettex2 div {
+        height: 120px;
+        width: 340px;
+    }
+
+    footer {
+        display:flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    footer ul:first-child {
+        margin-left: 35px;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        margin-left: 35px;
+    }
 }
