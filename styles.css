@@ -39,6 +39,7 @@ ul {
 em {
     font-style: normal;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 nav {
@@ -57,7 +58,7 @@ header nav a {
     text-decoration:none;
 }
 
-header nav a:hover, :active {
+header nav a:hover {
     color:#0065FC;
     cursor: pointer;
     text-decoration:none;
@@ -318,6 +319,7 @@ aside figcaption p:last-child {
 
 section.activites {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -328,14 +330,16 @@ section.activites h2 {
     padding-top: 9px;
 }
 
-section.activites ul {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+section.activites ul ul {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    border-color:transparent;
+    border-style:none;
+    border-width: 0px;
+    border-radius: 0px;
+    border-left-style: none;
+    padding-right: 0px;
 }
 
 section.activites ul li {
@@ -346,8 +350,17 @@ section.activites ul li {
     margin-bottom: 32px;
 }
 
-section.activites ul.vignettesx2 li {
-    height: 50%;
+section.activites ul li.sansbordure {
+    display: flex;
+    align-items: baseline;
+    border-radius: 0px;
+    box-shadow:none;
+    margin-bottom: 0px;
+}
+
+section.activites ul li.sansbordure ul {
+    flex-direction: column;
+    align-items: baseline;
 }
 
 section.activites figure {
@@ -366,7 +379,7 @@ section.activites figure div {
     width: 280px;
 }
 
-section.activites ul.vignettex2 div {
+section.activites li.sansbordure div {
     height: 202px;
 }
 
@@ -413,75 +426,29 @@ footer a {
     text-decoration:none;
 }
 
-footer a:hover, :active {
+footer a:hover {
     color:#0065FC;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     body {
-        background-color:hotpink;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    header {
-        margin-left: 20px;
-        margin-right: 20px;
-        justify-content: space-around;
-    }
-
-    section:first-of-type {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    section ul {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: left;
+
+    main{
+        flex-direction: column-reverse;
     }
 
-    section ul ul {
-        display: flex;
-        border-color: #F2F2F2;
-        border-style: solid;
-        border-width: 2px;
-        border-radius: 20px;
-        border-left-style: none;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px;
+    main aside {
+        width: 100%;
+        margin :0;
+        padding :0;
     }
-
-    main {
-    display: flex;
-    }  
-    
-    aside {
-        background-color: #F2F2F2;
-        display: flex;
-        flex-direction: column;
-        border-radius: 0px;
-        width: auto;
-        margin-left: 0px;
-        margin-right:0px;
-        padding: 10px;
-    }
-
-    main section {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    background-color:transparent;
-    border-radius: 0px;
-    width: auto;
-    padding: 10px;
-    }
-
-
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     body {
         background-color: transparent;
         margin-left: 0px;
@@ -603,4 +570,4 @@ footer a:hover, :active {
         width: 100%;
         margin-left: 35px;
     }
-}
+} */
