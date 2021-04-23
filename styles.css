@@ -11,8 +11,6 @@ header {
 }
 
 h1 {
-    display: block;
-    font-weight: bold;
     font-size: larger;
 }
 
@@ -28,6 +26,8 @@ h3 {
     display: block;
     font-weight: bold;
     font-size: medium;
+    margin-block-start: 6px;
+    margin-block-end: 3px;
 }
 
 ul { 
@@ -42,10 +42,10 @@ em {
     white-space: nowrap;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
+a {
+    color:inherit;
+    cursor: pointer;
+    text-decoration:none;
 }
 
 header nav li {
@@ -65,12 +65,11 @@ header nav a:hover {
     border-top-color: #0065FC;
     border-top-style: solid;
     border-top-width: 2px;
-    padding-top: 38px;
+    padding-top: 37px;
 }
 
-form {
-    display: flex;
-    margin-bottom: 1em;
+section form {
+    margin-bottom: 2em;
 }
 
 section form ul li:first-child {
@@ -103,7 +102,6 @@ section form input[type="button"] {
 }
 
 section ul {
-    display: flex;
     align-items: center;
     margin-right: 15px;
     margin-left: 15px;
@@ -134,32 +132,19 @@ li.filtreicone {
 }
 
 section ul li button {
-        appearance:inherit;
-        text-rendering: auto;
-        color:black;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        display: flex;
-        text-align: center;
-        align-items: flex-start;
-        cursor:pointer;
-        background-color:transparent;
-        box-sizing:unset;
-        margin: 0em;
-        font:unset;
-        padding: 1px 6px;
-        border-width: 0px;
-        border:transparent;
-        border-color:transparent;
-        border-image:none;
-        padding-left: 10px;
+    background-color:transparent;
+    font:unset;
+    border:none;
+    padding-left: 10px;
 }
+
+section ul li button:hover {
+    color:#0065FC;
+    cursor: pointer;
+}
+
 .fa-info:before {
     content: "\f129";
-    display: flex;
     background-color: transparent;
     color: #0065FC;
     border-color: #F2F2F2;
@@ -169,22 +154,15 @@ section ul li button {
     padding: 3px;
     height: 10px;
     width: 10px;
-    align-items: center;
-    justify-content: center;
     margin: 15px 12px 15px 0px;
     font-size: x-small;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
 }
 
 main section {
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 70%;
@@ -192,9 +170,10 @@ main section {
 }
 
 main section ul {
-    display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 main section li {
@@ -215,8 +194,8 @@ main section ul li figure {
 main section ul li figure div {
     display:block;
     overflow: hidden;
-    height: 124px;
-    width: 218px;
+    height: 116px;
+    width: 230px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -240,20 +219,20 @@ main section figcaption p {
     margin-block-end: 5px;
 }
 
+
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 30%;
     margin-left: 35px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 aside ul {
-    display:flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 aside span {
@@ -264,16 +243,11 @@ aside span {
 }
 
 aside li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding:15px;
 }
 
 aside figure {
     display: flex;
-    justify-content:space-between;
-    align-items: center;
     background-color:white;
     border-radius: 12px;
     padding: 5px;
@@ -286,7 +260,6 @@ aside figure {
 }
 
 aside div {
-    display: block;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     overflow: hidden;
@@ -303,101 +276,81 @@ aside img {
 
 aside figcaption {
     margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 aside figcaption h2 {
     margin-block-start: 10px;
+    margin-bottom: -34px;
 }
 
 aside figcaption p {
-    margin: 2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-aside figcaption p:last-child {
+#activites {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-section.activites {
+#activites h2 {
+    margin-bottom: 28px;
+}
+
+div.nouvelessaiactivites {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-bottom: 40px;
 }
 
-section.activites h2 {
-    padding-top: 9px;
-}
-
-section.activites ul ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-color:transparent;
-    border-style:none;
-    border-width: 0px;
-    border-radius: 0px;
-    border-left-style: none;
-    padding-right: 0px;
-}
-
-section.activites ul li {
-    display: flex;
-    align-items: baseline;
+div.unique {
+    width: 25%;
+    overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0px 0px 5px lightgrey;
-    margin-bottom: 32px;
+    box-shadow: 0px 0px 8px lightgrey;
+    margin-right: 28px;
 }
 
-section.activites ul li.sansbordure {
+div.unique div {
+    height: 350px;
+}
+
+div.nouvelessaiactivites h2 {
+    margin: 10px 10px 10px 10px;
+}
+
+div.avec2 {
+    width:25%;
+    overflow: hidden;
+    margin-right: 28px;
     display: flex;
-    align-items: baseline;
-    border-radius: 0px;
-    box-shadow:none;
-    margin-bottom: 0px;
-}
-
-section.activites ul li.sansbordure ul {
     flex-direction: column;
-    align-items: baseline;
+    justify-content: space-between;
 }
 
-section.activites figure {
-    overflow:hidden;
-    display: block;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+div.avec2 div {
+    border-radius: 12px;
+    box-shadow: 0px 0px 8px lightgrey;
+    overflow: hidden;
 }
 
-section.activites figure div {
-    height: 490px;
-    width: 280px;
+div.avec2 div:first-child {
+    margin-bottom: 19px;
 }
 
-section.activites li.sansbordure div {
-    height: 202px;
+div.avec2 div div {
+    height: 125px;
+
 }
 
-section.activites img {
+div.nouvelessaiactivites img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
     object-position:center;
 }
 
-section.activites figcaption {
-    margin: 2px;
-}
-
-section.activites figcaption h2 {
-    margin-block-start: 0px;
-    padding: 15px;
-}
 
 footer {
     background-color: #F2F2F2;
