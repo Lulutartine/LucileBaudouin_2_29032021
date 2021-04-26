@@ -18,21 +18,20 @@ h2 {
     display: block;
     font-weight: bold;
     font-size: medium;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin:0;
 }
 
 h3 {
     display: block;
     font-weight: bold;
     font-size: medium;
-    margin-block-start: 6px;
-    margin-block-end: 3px;
+    margin-top: 6px;
+    margin-bottom: 3px;
 }
 
 ul { 
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding: 0px;
     display: flex;
 }
 
@@ -69,7 +68,7 @@ header nav a:hover {
 }
 
 section form {
-    margin-bottom: 2em;
+    margin-bottom: 2em;    
 }
 
 section form ul li:first-child {
@@ -77,8 +76,8 @@ section form ul li:first-child {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 10px;
-    border-style: solid;
-    border-color: #F2F2F2;
+    border-style:solid;
+    border-color:#F2F2F2;
     border-width: 2px;
 }
 
@@ -88,6 +87,9 @@ section form input[type="search"] {
     padding: 10px;
     font: unset;
     margin-right: 10px;
+    border-style:solid;
+    border-color:#F2F2F2;
+    border-width: 2px;
 }
 
 section form input[type="button"] {
@@ -107,16 +109,17 @@ section ul {
     margin-left: 15px;
 }
 
-section ul ul {
+section ul.filtres li {
     display: flex;
+}
+
+section ul.filtres li ul {
     border-color: #F2F2F2;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
     border-left-style: none;
-    justify-content: space-between;
     padding-right: 10px;
-    align-items: center;
 }
 
 li.filtreicone {
@@ -185,10 +188,7 @@ main section ul li figure {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0;
 }
 
 main section ul li figure div {
@@ -212,18 +212,18 @@ main section figcaption {
 }
 
 main h2 {
-    margin-block-start: 9px;
+    margin-top: 9px;
 }
+
 main section figcaption p {
-    margin-block-start: 5px;
-    margin-block-end: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 30%;
@@ -233,13 +233,6 @@ aside {
 
 aside ul {
     flex-direction: column;
-}
-
-aside span {
-    display:flex;
-    align-items:baseline;
-    justify-content: space-between;
-    padding: 0px 22px 0px 22px;
 }
 
 aside li {
@@ -252,14 +245,11 @@ aside figure {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin:0;
     width: 100%;
 }
 
-aside div {
+aside figure div {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     overflow: hidden;
@@ -282,13 +272,12 @@ aside figcaption {
 }
 
 aside figcaption h2 {
-    margin-block-start: 10px;
+    margin-top: 10px;
     margin-bottom: -34px;
 }
 
 aside figcaption p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin: 0;
 }
 
 #activites {
