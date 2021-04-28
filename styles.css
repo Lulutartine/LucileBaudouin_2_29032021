@@ -17,7 +17,7 @@ h1 {
 h2 {
     display: block;
     font-weight: bold;
-    font-size: medium;
+    font-size: larger;
     margin:0;
 }
 
@@ -25,8 +25,6 @@ h3 {
     display: block;
     font-weight: bold;
     font-size: medium;
-    margin-top: 6px;
-    margin-bottom: 3px;
 }
 
 ul { 
@@ -67,19 +65,27 @@ header nav a:hover {
     padding-top: 37px;
 }
 
+header nav li.login {
+    color: #0065FC;
+}
+
 section form {
     margin-bottom: 2em;    
+}
+
+section form ul {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F2F2F2;
+    border-radius: 15px;
+    width: fit-content;
 }
 
 section form ul li:first-child {
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 10px;
-    border-color:#F2F2F2;
-    border-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid
+    padding: 12px;
 }
 
 section form input[type="search"] {
@@ -88,6 +94,10 @@ section form input[type="search"] {
     padding: 10px;
     font: unset;
     margin-right: 10px;
+}
+
+section form span {
+    display: none;
 }
 
 section form input[type="button"] {
@@ -368,10 +378,22 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    body {
-    margin-left: 25px;
-    margin-right: 25px;
-    width: auto;
+body {
+    margin: unset;
+    padding: 0px 42px 0px 15px;
+}
+
+header nav a:hover {
+        border-top-style:none;
+}
+
+header nav li:hover {
+
+    padding-top: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #0065FC;
+    padding-bottom: 15px;
 }
 
 section ul.filtres {
@@ -511,126 +533,173 @@ footer ul {
 
 }
 
-/* @media (max-width: 576px) {
-    body {
-        background-color: transparent;
-        margin-left: 0px;
-        margin-right: 0px;
-        display: flex;
-        flex-direction: column;
-    }
 
-    header {
-        flex-direction: column;
-    }
+@media (max-width: 576px) {
+body {
+    margin: 0px -9px 0px -9px;
+    padding: 6px 19px 6px 19px;
+} 
 
-    section:first-of-type {
-        display:flex;
-        flex-direction: column;
-    }
+header {
+    display: block;
+}
 
-    section:first-of-type ul {
-        margin: 0px 9px 0px 0px;
-    }
+header img {
+    float:left;
+    position:absolute;
+}
 
-    section form input[type="search"] {
-        border-color: transparent;
-        margin-left: 0px;
-        padding: 10px 0px 10px 10px;
-        font: unset;
-        margin-right: 0px;
-    }
+header nav ul {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: 
+    "s s"
+    "h a";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #F2F2F2;
+    margin-left: -10px;
+    margin-right: -10px;
+}
 
-    .filtresresponsive {
-        flex-wrap: wrap;
-    }
+header nav ul li:last-child {
+    grid-area: s;
+    text-align: right;
+    padding-right:16px;
+}
 
-    ul.filtresresponsive:first-child {
-        margin-right: 50%;
-    }
+header nav ul li:first-child {
+    grid-area: h;
+}
 
-    main {
-        flex-direction:column-reverse;
-    }
+header nav li {
+    margin: 0px;
+    text-align: center;
+}
 
-    aside {
-        padding-top: 25px;
-    }
+header nav li:hover {
+    padding-top: 17px;
+}
 
-    aside span {
-        padding: 0px 13px 0px 13px;
-    }
+.login:hover {
+    border-color:transparent;
+}
 
-    aside li {
-        padding: 7px;
-    }
+section ul:first-child {
+    margin:0px;
+}
 
-    main section {
-        margin: 0px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+section form input[type="button"] {
+    display: none;
+}
 
-    main ul.hebergementresponsive {
-        margin: 0px;
-        justify-content: center;
-    }
+section form span {
+    display: block;
+    background-color: #0065FC;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+}
 
-    main ul.hebergementresponsive div {
-        height: 114px;
-        width: 327px;
-    }
+section ul.filtres {
+    display:block;
+}
 
-    main ul.hebergementresponsive figcaption {
-        padding: 10px 0px 0px 0px;
-    }
+section ul.filtres li {
+    flex-wrap: wrap;
+}
 
-    main ul.hebergementresponsive figcaption h3 {
-        margin: 0px;
-    }
+ul.filtres li ul {
+    margin-top: 9px;
+}
 
-    section.activites {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    
-    section.activites h2 {
-        padding-top: 0px;
-        padding-bottom: 20px;
-    }
+main aside {
+    background-color: #F2F2F2;
+    border-radius: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 15px;
+}
 
-    section.activites ul.vignettex1 figure {
-        border-radius: 12px;
-        background-color: white;
-    }
+aside ul {
+    flex-direction: column;
+    margin-bottom:0px;
+}
 
-    section.activites ul.vignettex1 div {
-        height: 120px;
-        width: 340px;
-    }
+aside li {
+    margin-bottom: 10px;
+}
 
-    section.activites ul.vignettex2 div {
-        height: 120px;
-        width: 340px;
-    }
+aside ul li figure {
+    display:flex;
+}
 
-    footer {
-        display:flex;
-        flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+aside figure div {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0px;
+    overflow: hidden;
+    height: 130px;
+    width: 130px;
+}
 
-    footer ul:first-child {
-        margin-left: 35px;
-    }
+main section {
+    background-color:white;
+    padding: 6px;
+    margin-top: 14px;
+}
 
-    footer ul {
-        display: flex;
-        flex-direction:column;
-        width: 100%;
-        margin-left: 35px;
-    }
-} */
+#hebergements section ul {
+    display: block;
+}
+
+main section li {
+    margin-bottom: 10px;
+}
+
+main section figure {
+    display: block;
+}
+
+main section ul li figure div {
+    width: 100%;
+    height: 116px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0px;
+}
+
+div.nouvelessaiactivites {
+    display: block;
+}
+
+div.unique {
+    width: 100%;
+}
+
+div.unique div {
+    height: 120px;
+}
+
+div.avec2 {
+    width: 100%;
+}
+
+div.avec2 div {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+div.avec2 div:first-child {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: block;
+    margin-bottom: -20px;
+    padding-top: 4px;
+}
+
+}
