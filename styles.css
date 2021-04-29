@@ -50,9 +50,12 @@ header nav li {
 }
 
 header nav a {
-    color :black;
     cursor: pointer;
     text-decoration:none;
+}
+
+.login {
+    color: #0065FC;
 }
 
 header nav a:hover {
@@ -78,7 +81,7 @@ section form ul {
     border-width: 1px;
     border-color: #F2F2F2;
     border-radius: 15px;
-    width: fit-content;
+    width: max-content;
 }
 
 section form ul li:first-child {
@@ -162,7 +165,7 @@ section ul li button:hover {
     border-width: 1px;
     border-style: solid;
     border-radius: 17px;
-    padding: 3px;
+    padding: 8px;
     height: 10px;
     width: 10px;
     margin: 15px 12px 15px 0px;
@@ -293,12 +296,14 @@ aside figcaption p {
     margin-bottom: 30px;
 }
 
-div.nouvelessaiactivites {
+.nouvelessaiactivites {
     display: flex;
     margin-top: 15px;
 }
 
-div.unique {
+
+
+.unique {
     width: 25%;
     overflow: hidden;
     border-radius: 12px;
@@ -306,12 +311,16 @@ div.unique {
     margin-right: 28px;
 }
 
-div.unique div {
+.unique div {
     height: 350px;
 }
 
-div.nouvelessaiactivites h2 {
+.nouvelessaiactivites h2 {
     margin: 10px 10px 10px 10px;
+}
+
+.nouvelessaiactivites h3 {
+    margin-left: 9px;
 }
 
 div.avec2 {
@@ -380,7 +389,7 @@ footer a:hover {
 @media (max-width: 768px) {
 body {
     margin: unset;
-    padding: 0px 42px 0px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 header nav a:hover {
