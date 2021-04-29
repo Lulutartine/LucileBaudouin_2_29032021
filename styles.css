@@ -1,5 +1,10 @@
 body {
     font-family: 'Raleway','Roboto','Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header,section,main {
     padding: 0px 20px 0px 20px;
 }
 
@@ -385,8 +390,7 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-body {
-    margin: unset;
+header,section,main {
     padding: 0px 15px 0px 15px;
 }
 
@@ -540,9 +544,9 @@ footer ul {
 
 
 @media (max-width: 576px) {
-body {
+header,section,main {
     padding: 6px 10px 6px 10px;
-} 
+}
 
 header {
     display: block;
