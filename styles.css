@@ -1,7 +1,6 @@
 body {
     font-family: 'Raleway','Roboto','Open Sans', sans-serif;
-    margin-left: 35px;
-    margin-right: 35px;
+    padding: 0px 20px 0px 20px;
 }
 
 header {
@@ -231,7 +230,6 @@ main section figcaption p {
     margin-bottom: 5px;
 }
 
-
 aside {
     display: flex;
     flex-direction: column;
@@ -301,8 +299,6 @@ aside figcaption p {
     margin-top: 15px;
 }
 
-
-
 .unique {
     width: 25%;
     overflow: hidden;
@@ -323,22 +319,26 @@ aside figcaption p {
     margin-left: 9px;
 }
 
-div.avec2 {
+.avec2 {
     width:25%;
     overflow: hidden;
-    margin-right: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 28px;
 }
 
-div.avec2 div {
+.avec2:last-child {
+    margin-right: 0px;
+}
+
+.avec2 div {
     border-radius: 12px;
     box-shadow: 0px 0px 8px lightgrey;
     overflow: hidden;
 }
 
-div.avec2 div:first-child {
+.avec2 div:first-child {
     margin-bottom: 19px;
 }
 
@@ -347,7 +347,7 @@ div.avec2 div div {
 
 }
 
-div.nouvelessaiactivites img {
+.nouvelessaiactivites img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
@@ -358,8 +358,6 @@ div.nouvelessaiactivites img {
 footer {
     background-color: #F2F2F2;
     display: flex;
-    margin-left: -35px;
-    margin-right: -35px;
 }
 
 footer ul {
@@ -526,9 +524,7 @@ div.avec2 div:first-child {
 
 footer {
     justify-content: space-between;
-    margin-left: -25px;
     padding-left: 34px;
-    margin-right: -25px;
     padding-right: 40px;
 }
 
@@ -545,8 +541,7 @@ footer ul {
 
 @media (max-width: 576px) {
 body {
-    margin: 0px -9px 0px -9px;
-    padding: 6px 19px 6px 19px;
+    padding: 6px 10px 6px 10px;
 } 
 
 header {
