@@ -11,8 +11,6 @@ header {
 }
 
 h1 {
-    display: block;
-    font-weight: bold;
     font-size: larger;
 }
 
@@ -42,12 +40,6 @@ em {
     white-space: nowrap;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-}
-
 header nav li {
     margin: 15px;
 }
@@ -65,12 +57,7 @@ header nav a:hover {
     border-top-color: #0065FC;
     border-top-style: solid;
     border-top-width: 2px;
-    padding-top: 38px;
-}
-
-form {
-    display: flex;
-    margin-bottom: 1em;
+    padding: top 29px;
 }
 
 section form ul li:first-child {
@@ -103,7 +90,6 @@ section form input[type="button"] {
 }
 
 section ul {
-    display: flex;
     align-items: center;
     margin-right: 15px;
     margin-left: 15px;
@@ -177,14 +163,9 @@ section ul li button {
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
 }
 
 main section {
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 70%;
@@ -192,7 +173,6 @@ main section {
 }
 
 main section ul {
-    display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
 }
@@ -246,12 +226,9 @@ aside {
     width: 30%;
     margin-left: 35px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 aside ul {
-    display:flex;
     flex-direction: column;
     justify-content: center;
 }
