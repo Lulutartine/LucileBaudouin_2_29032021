@@ -8,6 +8,12 @@ header,section,main {
     padding: 0px 20px 0px 20px;
 }
 
+section,main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -15,20 +21,20 @@ header {
 }
 
 h1 {
-    font-size: larger;
+    font-weight: bold;
 }
 
 h2 {
-    display: block;
     font-weight: bold;
-    font-size: larger;
+    font-size: medium;
     margin:0;
 }
 
 h3 {
-    display: block;
     font-weight: bold;
     font-size: medium;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 ul { 
@@ -69,15 +75,17 @@ header nav a:hover {
     border-top-color: #0065FC;
     border-top-style: solid;
     border-top-width: 2px;
-    padding-top: 37px;
+    padding-top: 28px;
 }
 
 header nav li.login {
     color: #0065FC;
+    font-weight: bold;
 }
 
 section form {
     margin-bottom: 2em;    
+    font-weight: bold;
 }
 
 section form ul {
@@ -151,7 +159,7 @@ li.filtreicone {
 
 section ul li button {
     background-color:transparent;
-    font:unset;
+    font-weight: bold;
     border:none;
     padding-left: 10px;
 }
@@ -159,6 +167,11 @@ section ul li button {
 section ul li button:hover {
     color:#0065FC;
     cursor: pointer;
+}
+
+section div.info {
+    display: flex;
+    align-items: baseline;
 }
 
 .fa-info:before {
@@ -188,7 +201,7 @@ main section {
 }
 
 main section ul {
-    justify-content:space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-right: 0px;
     margin-left: 0px;
@@ -224,6 +237,7 @@ main section figure img {
 
 main section figcaption {
     margin-left: 9px;
+    margin-top: 7px;
 }
 
 main h2 {
@@ -241,8 +255,14 @@ aside {
     background-color: #F2F2F2;
     border-radius: 10px;
     width: 30%;
-    margin-left: 35px;
+    margin-left: 25px;
     padding: 20px;
+}
+
+aside h2 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 aside ul {
@@ -255,12 +275,23 @@ aside li {
 
 aside figure {
     display: flex;
-    background-color:white;
+    background-color: white;
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    margin:0;
+    margin: 0;
     width: 100%;
+    max-height: 130px;
+    max-width: 400px;
+    min-width: 287px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+aside figure div.aside-caption {
+    width:auto;
 }
 
 aside figure div {
@@ -279,10 +310,10 @@ aside img {
 }
 
 aside figcaption {
-    margin-left: 15px;
+    padding: 10px 10px 10px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-width: 130px;
 }
 
 aside figcaption h2 {
