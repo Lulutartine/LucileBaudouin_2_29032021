@@ -1,5 +1,6 @@
-body {
+html,body {
     font-family: 'Raleway','Roboto','Open Sans', sans-serif;
+    font-size: 16px;
     padding: 0px;
     margin: 0px;
 }
@@ -29,7 +30,12 @@ h2,h3 {
     margin:0;
 }
 
+h2 {
+    font-size: 1.2rem;
+}
+
 h3 {
+    font-size: 1.19rem;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -189,25 +195,31 @@ section div.info {
     margin-bottom: 25px;
 }
 
+/* main */
 .container {
-    max-width: 1440px;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    max-width: 1440px;
+}
+
+.container:nth-of-type(1) {
+    flex: 1.5;
 }
 
 #hebergements {
-    float:left;
-    position: relative;
-    width: calc(100% - 617px);
     background: #f2f2f2;
     border-radius: 10px;
-    border-radius: 10px;
-    padding: 40px 40px 27px 40px;
+    padding: 30px;
 }
 
 #hebergements h2 {
     margin-bottom: 25px;
+}
+
+#hebergements h3 {
+    margin-top: 7px;
 }
 
 #hebergements .container {
@@ -215,7 +227,7 @@ section div.info {
     padding: 0;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .carte_hebergement_portrait {
@@ -224,12 +236,12 @@ section div.info {
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
     width: fit-content;
-    margin-bottom: 25px;
+    margin: 0px 20px 20px 10px;
 }
 
 .carte_hebergement_portrait .taille-image {
-    width: 242px;
-    height: 113px;
+    width: 258px;
+    height: 116px;
     overflow: hidden;
 }
 
@@ -249,13 +261,14 @@ section div.info {
     padding: 7px 0px 7px 0px;
 }
 
+
+                                /* aside */
 .populaires {
-    float:right;
-    position:relative;
-    width: 425px;
     background: #f2f2f2;
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
+    margin-left: 25px;
+    height: fit-content;
 }
 
 .populaires h2 {
@@ -269,19 +282,19 @@ section div.info {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .carte_hebergement_paysage:last-child {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .carte_hebergement_paysage a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: fit-content;
-    width: fit-content;
 }
 
 .carte_hebergement_paysage .taille-image {
@@ -299,25 +312,29 @@ section div.info {
 }
 
 .hebergement_paysage_texte {
-    padding: 12px 12px;
+    padding: 12px 12px 12px 23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 212px;
+    width: 170px;
+}
+
+.hebergement_paysage_texte .alignement p {
+    margin-top: 5px;
 }
 
 #activites {
     clear:both;
-    padding: 31px 0 0 0;
+    padding: 31px 0 31px 0;
     box-sizing: border-box;
 }
 
-.nouvelessaiactivites {
+    .nouvelessaiactivites {
     display: flex;
     margin-top: 15px;
 }
 
-.unique {
+    .unique {
     width: 25%;
     overflow: hidden;
     border-radius: 12px;
@@ -325,19 +342,19 @@ section div.info {
     margin-right: 28px;
 }
 
-.unique div {
+    .unique div {
     height: 350px;
 }
 
-.nouvelessaiactivites h2 {
+    .nouvelessaiactivites h2 {
     margin: 10px 10px 10px 10px;
 }
 
-.nouvelessaiactivites h3 {
+    .nouvelessaiactivites h3 {
     margin-left: 9px;
 }
 
-.avec2 {
+    .avec2 {
     width:25%;
     overflow: hidden;
     display: flex;
@@ -346,82 +363,67 @@ section div.info {
     margin-right: 28px;
 }
 
-.avec2:last-child {
+    .avec2:last-child {
     margin-right: 0px;
 }
 
-.avec2 div {
+    .avec2 div {
     border-radius: 12px;
     box-shadow: 0px 0px 8px lightgrey;
     overflow: hidden;
 }
 
-.avec2 div:first-child {
+    .avec2 div:first-child {
     margin-bottom: 19px;
 }
 
-div.avec2 div div {
+    div.avec2 div div {
     height: 125px;
 
 }
 
-.nouvelessaiactivites img {
+    .nouvelessaiactivites img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
     object-position:center;
 }
 
-
 footer {
     background-color: #F2F2F2;
     display: flex;
 }
 
-footer ul {
+    footer ul {
     display: flex;
     flex-direction:column;
     width: 45%;
 }
 
-footer ul:first-child {
+    footer ul:first-child {
     margin-left: 35px;
 }
 
-footer li {
+    footer li {
     margin-bottom: 15px;
 }
 
-footer a {
+    footer a {
     color:inherit;
     cursor: pointer;
     text-decoration:none;
 }
 
-footer a:hover {
+    footer a:hover {
     color:#0065FC;
 }
 
-@media (max-width: 768px) {
-header,section,main {
+@media (max-width: 1083px) {
+header,section {
     padding: 0px 15px 0px 15px;
 }
 
-header nav a:hover {
-        border-top-style:none;
-}
-
-header nav li:hover {
-
-    padding-top: 0px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: #0065FC;
-    padding-bottom: 15px;
-}
-
 section ul.filtres {
-    justify-content: space-around;
     margin-right: 0;
     margin-left: 0;
 }
@@ -430,80 +432,54 @@ section ul.filtres li ul {
     margin-left: 7px;
     margin-right: 0px;
 }
-    main{
+
+.section_recherche .filtres li:first-child {
+    margin-right: 5px;
+}
+
+.container {
     flex-direction: column-reverse;
-    }
-
-    main aside {
-        width: auto;
-        margin :0;
-        padding :9px;
-        background-color:white;
-    }
-
-    aside figcaption h2 {
-        margin-top: 7px;
-        margin-bottom: 0px;
-    }
-
-    aside ul {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    aside li {
-        padding: 0px;
-    }
-
-    aside ul li figure {
-        display:block;
-        padding:0;
-    }
-
-    aside figure div {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        border-bottom-left-radius: 0px;
-        overflow: hidden;
-        height: 90px;
-        width: 215px;
-    }
-
-    aside figcaption {
-        margin-left:10px;
-        padding-bottom: 10px;
-    }
-    
-main section {
-    width : auto;
-}
-
-main section {
-    display: block;
-    padding: 15px;
-}
-
-main section li {
-    padding: 0px;
-    margin-bottom: 8px;
-}
-
-main section figure {
-    display: flex;
-    align-items:center;
-}
-
-main section ul li figure div {
-    width:115px;
-    height: 100px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 12px;
-}
-
-main section figcaption {
     margin-left: 15px;
-    width: 200px;
+    margin-right: 15px;
+    max-width: 1083px;
+}
+
+.container #hebergements {
+    padding: 30px;
+    width: auto;
+}
+
+#hebergements .container {
+    flex-direction: row;
+}
+
+.carte_hebergement_portrait {
+    margin: 0px 10px 20px 10px;
+}
+
+.populaires {
+    background: white;
+    margin-left: 0px;
+}
+
+.container_aside {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte_hebergement_paysage .taille-image {
+    width: 100px;
+    height: 100px;
+}
+
+.carte_hebergement_paysage .hebergement_paysage_texte {
+    padding: 6px 6px 6px 10px;
+    width: 183px;
+}
+
+#activites {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 div.nouvelessaiactivites {
@@ -555,8 +531,75 @@ footer ul {
 
 }
 
+@media (max-width: 768px) {
+html, body {
+    font-size: 14px;
+}
 
-@media (max-width: 576px) {
+header nav a:hover {
+        border-top-style:none;
+}
+
+header nav li:hover {
+    padding-top: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #0065FC;
+    padding-bottom: 15px;
+}
+
+.carte_hebergement_paysage a {
+    flex-direction: column;
+}
+
+.carte_hebergement_paysage {
+    width: fit-content;
+}
+
+.carte_hebergement_paysage .taille-image, .carte_hebergement_portrait .taille-image {
+    width: 210px;
+    height: 100px;
+}
+
+.carte_hebergement_paysage img, .carte_hebergement_portrait img {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.carte_hebergement_paysage .hebergement_paysage_texte, .hebergement_portrait_texte .hebergement_portrait_texte {
+    height: 73px;
+    padding: 6px 6px 6px 6px;
+}
+
+.hebergement_paysage_texte .alignement p {
+    margin-top: 2px;
+}
+
+.hebergement_paysage_texte h3, .hebergement_portrait_texte h3 {
+    font-size: 1.1rem;
+}
+
+.container {
+    margin: 0;
+}
+
+.container #hebergements, .populaires {
+    padding: 22px;
+    border-radius: 0;
+    justify-content: space-around;
+}
+
+#activites {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+}
+
+@media (max-width: 375px) {
+html, body {
+    font-size: 12px;
+}
+
 header,section,main {
     padding: 6px 10px 6px 10px;
 }
@@ -637,60 +680,63 @@ ul.filtres li ul {
     margin-top: 9px;
 }
 
-main aside {
-    background-color: #F2F2F2;
-    border-radius: 0;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding: 15px;
+.populaires {
+    background: #F2F2F2;
 }
 
-aside ul {
+.container_aside {
     flex-direction: column;
-    margin-bottom:0px;
 }
 
-aside li {
-    margin-bottom: 10px;
+.carte_hebergement_paysage {
+    margin-bottom: 15px;
+    width: auto;
 }
 
-aside ul li figure {
-    display:flex;
+.carte_hebergement_paysage a {
+    flex-direction:row;
 }
 
-aside figure div {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-top-right-radius: 0px;
-    overflow: hidden;
-    height: 130px;
-    width: 130px;
+.carte_hebergement_paysage .taille-image {
+    width: 126px;
+    height: 133px;
 }
 
-main section {
-    background-color:white;
-    padding: 6px;
-    margin-top: 14px;
+.carte_hebergement_paysage img {
+    border-radius: 12px 0px 0px 12px;
 }
 
-#hebergements section ul {
-    display: block;
+.carte_hebergement_paysage .hebergement_paysage_texte {
+    height:unset;
+    padding: 6px 0px 6px 14px;
 }
 
-main section li {
-    margin-bottom: 10px;
+.carte_hebergement_paysage .alignement {
+    padding-right: 40px;
 }
 
-main section figure {
-    display: block;
+.hebergement_paysage_texte h3, .hebergement_portrait_texte h3 {
+    font-size: 1.19rem;
 }
 
-main section ul li figure div {
-    width: 100%;
-    height: 116px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0px;
+.hebergement_paysage_texte .alignement p {
+    margin-top: 7px;
 }
+
+
+#hebergements {
+    background: white;
+}
+
+#hebergements .container {
+    flex-direction: column;
+}
+
+#hebergements .taille-image {
+    width: auto;
+    height: 136px;
+}
+
 
 div.nouvelessaiactivites {
     display: block;
@@ -722,5 +768,4 @@ footer {
     margin-bottom: -20px;
     padding-top: 4px;
 }
-
 }
