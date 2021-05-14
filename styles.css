@@ -482,8 +482,8 @@ section ul.filtres {
 }
 
 .populaires {
-    width: fit-content;
     border-radius: 0;
+    width:35%;
     height:auto;
     background: white;
     padding: 0px;
@@ -666,6 +666,7 @@ section form input[type="button"] {
 
 .populaires {
     background: #F2F2F2;
+    width: auto;
 }
 
 .container_aside {
