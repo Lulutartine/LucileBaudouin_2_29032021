@@ -21,6 +21,7 @@ header {
 .container-main {
     display: flex;
     justify-content: space-between;
+    max-width: 970px;
 }
 
 h1 {
@@ -354,6 +355,7 @@ section div.info {
 #activites {
     box-sizing: border-box;
     padding-top: 40px;
+    max-width: 970px;
     }
 
 #activites h2 {
