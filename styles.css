@@ -666,7 +666,7 @@ section form input[type="button"] {
 
 .populaires {
     background: #F2F2F2;
-    width: 100%;
+    width: auto;
 }
 
 .container_aside {
