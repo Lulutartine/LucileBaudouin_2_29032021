@@ -6,7 +6,6 @@ html,body {
 }
 
 .screen-adapt {
-    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 20px 0px 20px;
@@ -17,6 +16,11 @@ header {
     justify-content: space-between;
     align-items:flex-end;
     height:65px;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
@@ -224,7 +228,6 @@ section div.info {
 }
 
 #hebergements {
-    width: 60%;
     background: #f2f2f2;
     border-radius: 10px;
     padding: 30px;
@@ -249,6 +252,7 @@ section div.info {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    max-width: 590px;
 }
 
 .carte_hebergement_portrait {
@@ -285,7 +289,6 @@ section div.info {
 
                                 /* aside */
 .populaires {
-    width: 25%;
     background: #f2f2f2;
     border-radius: 10px;
     height: fit-content;
@@ -412,7 +415,6 @@ section div.info {
 
                        /* footer */
 footer {
-    max-width: 1024px;
     background-color: #F2F2F2;
     display: flex;
     margin-left: auto;
@@ -476,17 +478,20 @@ section ul.filtres {
     padding-top: 10px;
 }
 
-.container {
+.container-main {
     flex-direction: column-reverse;
     padding: 0;
 }
 
 .populaires {
     border-radius: 0;
-    width:35%;
-    height:auto;
     background: white;
     padding: 0px;
+}
+
+.populaires .container_aside {
+    flex-direction: row;
+    height:auto;
 }
 
 .populaires .carte_hebergement_paysage {
@@ -504,6 +509,7 @@ section ul.filtres {
 #hebergements .container {
     justify-content: space-around;
     flex-direction: row;
+    max-width: unset;
 }
 
 #activites h2 {
@@ -669,8 +675,7 @@ section form input[type="button"] {
     width: auto;
 }
 
-.container_aside {
-    height: auto;
+.populaires .container_aside {
     flex-direction: column;
 }
 
