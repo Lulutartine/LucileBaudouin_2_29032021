@@ -8,7 +8,7 @@ html,body {
 .screen-adapt {
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 25px 0px 25px;
 }
 
 header {
@@ -65,7 +65,7 @@ margin: 0px;
 }
 
 header nav li {
-    padding: 28px 20px 0px 20px;
+    padding: 34px 20px 0px 20px;
 }
 
 header nav a {
@@ -237,8 +237,7 @@ section div.info {
     background: #f2f2f2;
     border-radius: 10px;
     padding: 30px;
-    width: 61%;
-    height: 35em;
+    width: 60%;
 }
 
 #hebergements h2 {
@@ -274,7 +273,7 @@ section div.info {
 
 .carte_hebergement_portrait .taille-image {
     width: 100%;
-    height: 7.4em;
+    height: 14vh;
     overflow: hidden;
 }
 
@@ -299,10 +298,8 @@ section div.info {
 .populaires {
     background: #f2f2f2;
     border-radius: 10px;
-    height: fit-content;
     padding: 30px;
     width: 25%;
-    height: 35em;
 }
 
 .populaires h2 {
@@ -316,7 +313,6 @@ section div.info {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 91%;
 }
 
 .carte_hebergement_paysage {
@@ -339,15 +335,15 @@ section div.info {
 
 .populaires .taille-image {
     width: 37%;
-    height: 8.3em;
+    height: 17vh;
     overflow: hidden;
 }
 
 .populaires img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    width: 102%;
-    height: 103%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -405,16 +401,16 @@ section div.info {
 .bloc_cartes_activites .image_activite_taille {
     overflow: hidden;
     border-radius: 12px 12px 0px 0px;
-    height: 35em;
+    height: 58vh;
 }
 
-.col-2-top .image_activite_taille { height: 16.5em;}
-.col-2-bottom .image_activite_taille { height: 12em;}
-.col-4-top .image_activite_taille { height: 14em;}
-.col-4-bottom .image_activite_taille { height: 15em;}
+.col-2-top .image_activite_taille { height: 25vh;}
+.col-2-bottom .image_activite_taille { height: 17vh;}
+.col-4-top .image_activite_taille { height: 21vh;}
+.col-4-bottom .image_activite_taille { height: 23vh;}
 
 .bloc_cartes_activites img {
-    height: 113%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -510,7 +506,6 @@ section ul.filtres {
 
 .populaires {
     width: auto;
-    height: auto;
     border-radius: 0;
     background: white;
     padding: 0px;
@@ -518,12 +513,11 @@ section ul.filtres {
 
 .populaires .container_aside {
     flex-direction: row;
-    height:auto;
 }
 
 .populaires .carte_hebergement_paysage {
     margin-bottom: 25px;
-    width: 31%;
+    width: 30%;
 }
 
 #hebergements {
@@ -565,6 +559,16 @@ section ul.filtres {
     justify-content: space-between;
 }
 
+.bloc_cartes_activites .image_activite_taille {
+    height: 40vh;
+}
+
+.col-2-top .image_activite_taille { height: 15vh;}
+.col-2-bottom .image_activite_taille { height: 15vh;}
+.col-4-top .image_activite_taille { height: 15vh;}
+.col-4-bottom .image_activite_taille { height: 15vh;}
+
+
 footer {
     justify-content: space-between;
 }
@@ -579,7 +583,7 @@ footer ul {
 
 
                                         /*  iphone */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
 body {
     font-size: 14px;
 }
@@ -753,7 +757,7 @@ section form input[type="button"] {
 }
 
 .bloc_cartes_activites .image_activite_taille {
-    height: 8.2em;
+    height: 20vh;
 }
 
 footer {
