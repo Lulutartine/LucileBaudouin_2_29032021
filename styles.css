@@ -1,6 +1,6 @@
 html,body {
     font-family: 'Raleway','Roboto','Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
 }
@@ -21,7 +21,7 @@ header {
 .container-main {
     display: flex;
     justify-content: space-between;
-    max-width: 970px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -65,7 +65,7 @@ margin: 0px;
 }
 
 header nav li {
-    padding: 37px 20px 0px 20px;
+    padding: 28px 20px 0px 20px;
 }
 
 header nav a {
@@ -119,7 +119,7 @@ section form ul {
     border-width: 1px;
     border-color: #F2F2F2;
     border-radius: 15px;
-    width: max-content;
+    width:fit-content;
 }
 
 .section_recherche form ul li:first-child {
@@ -234,6 +234,8 @@ section div.info {
     background: #f2f2f2;
     border-radius: 10px;
     padding: 30px;
+    width: 63%;
+    height: 35em;
 }
 
 #hebergements h2 {
@@ -246,7 +248,7 @@ section div.info {
 
 #hebergements h3:last-child {
     font-size: 1.15rem;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 #hebergements .container {
@@ -255,7 +257,7 @@ section div.info {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    max-width: 590px;
+    width: 100%;
 }
 
 .carte_hebergement_portrait {
@@ -263,13 +265,13 @@ section div.info {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    width: fit-content;
-    margin-bottom: 22px;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .carte_hebergement_portrait .taille-image {
-    width: 171px;
-    height: 79px;
+    width: 100%;
+    height: 7.4em;
     overflow: hidden;
 }
 
@@ -282,7 +284,7 @@ section div.info {
 }
 
 .hebergement_portrait_texte {
-    padding-left: 7px;
+    padding: 0px 0px 7px 7px;
 }
 
 .hebergement_portrait_texte p {
@@ -296,6 +298,8 @@ section div.info {
     border-radius: 10px;
     height: fit-content;
     padding: 30px;
+    width: 25%;
+    height: 35em;
 }
 
 .populaires h2 {
@@ -305,10 +309,11 @@ section div.info {
 }
 
 .container_aside {
-    height: 363px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    height: 91%;
 }
 
 .carte_hebergement_paysage {
@@ -316,8 +321,11 @@ section div.info {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0px 0px 8px lightgrey;
-    width: max-content;
-    height: max-content;
+    margin-bottom: 20px;
+}
+
+.carte_hebergement_paysage:last-child {
+    margin-bottom: 0px;
 }
 
 .populaires a {
@@ -327,26 +335,25 @@ section div.info {
 }
 
 .populaires .taille-image {
-    width: 78px;
-    height: 88px;
+    width: 37%;
+    height: 8.3em;
     overflow: hidden;
 }
 
 .populaires img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    width: 100%;
-    height: 100%;
+    width: 102%;
+    height: 103%;
     object-fit: cover;
 }
 
 .hebergement_paysage_texte {
-    padding: 5px 0px 0px 14px;
+    padding: 8px 0px 7px 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 130px;
-    font-size: 10px;
+    width: 53%;
 }
 
 .hebergement_paysage_texte p {
@@ -357,9 +364,7 @@ section div.info {
 #activites {
     box-sizing: border-box;
     padding-top: 40px;
-    max-width: 970px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     }
 
 #activites h2 {
@@ -371,14 +376,14 @@ section div.info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
   }
 
 .bloc_cartes_activites > * {
     flex: 0 0 auto;
     margin-bottom: 35px;
+    width: 23%;
   }
-
-
 
 .col-2, .col-4 {
     display: flex;
@@ -391,25 +396,23 @@ section div.info {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 0px 8px lightgrey;
-    height: fit-content;
-    width: fit-content;
+    width: 100%;
 }
 
 .bloc_cartes_activites .image_activite_taille {
-    height: 315px;
-    width: 225px;
     overflow: hidden;
     border-radius: 12px 12px 0px 0px;
+    height: 35em;
 }
 
-.col-2-top .image_activite_taille { height: 135px;}
-.col-2-bottom .image_activite_taille { height: 100px;}
-.col-4-top .image_activite_taille { height: 110px;}
-.col-4-bottom .image_activite_taille { height: 125px;}
+.col-2-top .image_activite_taille { height: 16.5em;}
+.col-2-bottom .image_activite_taille { height: 12em;}
+.col-4-top .image_activite_taille { height: 14em;}
+.col-4-bottom .image_activite_taille { height: 15em;}
 
 .bloc_cartes_activites img {
-    height: 130%;
-    width: 105%;
+    height: 113%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
 }
