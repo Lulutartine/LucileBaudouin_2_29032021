@@ -119,7 +119,7 @@ section form ul {
     border-width: 1px;
     border-color: #F2F2F2;
     border-radius: 15px;
-    width:fit-content;
+    width:23%;
 }
 
 .section_recherche form ul li:first-child {
@@ -127,6 +127,11 @@ section form ul {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding:14px 14px 14px 14px;
+}
+
+.section_recherche form ul li:nth-of-type(2) {
+    display: inline-flex;
+    align-items: center;
 }
 
 section form input[type="search"] {
@@ -491,6 +496,10 @@ header nav li:hover {
     border-bottom: #0065FC solid 2px;
 }
 
+section form ul {
+    width: 45%;
+}
+
 section ul.filtres {
     display:block;
 }
@@ -585,15 +594,15 @@ footer ul {
                                         /*  iphone */
 @media (max-width: 425px) {
 body {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.33rem;
 }
 
 #hebergements h3:last-child {
@@ -613,7 +622,7 @@ h3 {
 }
 
 .section_recherche .filtres li h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #activites h2 {
@@ -676,7 +685,7 @@ section form ul {
 }
 
 section form input[type="search"] {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .section_recherche form ul li:first-child {
@@ -695,13 +704,8 @@ section form input[type="button"] {
     border-radius: 12px;
 }
 
-.populaires a {
-    flex-direction:row;
-}
-
-.populaires .carte_hebergement_paysage {
-    margin-bottom: 10px;
-    width: auto;
+.section_recherche ul li button {
+    font-size: 1.3rem;
 }
 
 .populaires {
@@ -713,6 +717,25 @@ section form input[type="button"] {
     flex-direction: column;
 }
 
+.populaires a {
+    flex-direction:row;
+}
+
+.populaires .carte_hebergement_paysage {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.populaires .taille-image {
+    width: 35%;
+    height: 24vh;
+}
+
+.hebergement_paysage_texte {
+    padding: 14px 0px 7px 14px;
+    width: 52%;
+}
+
 #hebergements {
     background: white;
 }
@@ -722,11 +745,11 @@ section form input[type="button"] {
 }
 
 .carte_hebergement_portrait {
-    width: auto;
+    width: 97%;
 }
 
 .carte_hebergement_portrait .taille-image {
-    height: 8em;
+    height: 21vh;
 }
                         /* activites */
 .bloc_cartes_activites {
@@ -757,7 +780,7 @@ section form input[type="button"] {
 }
 
 .bloc_cartes_activites .image_activite_taille {
-    height: 20vh;
+    height: 22vh;
 }
 
 footer {
