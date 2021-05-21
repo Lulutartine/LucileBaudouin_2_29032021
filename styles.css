@@ -745,11 +745,6 @@ section form input[type="button"] {
     width: auto;
 }
 
-.populaires .taille-image {
-    width: 35%;
-    min-height: 24vh;
-}
-
 .hebergement_paysage_texte {
     padding: 14px 0px 7px 14px;
     width: 52%;
