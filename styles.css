@@ -740,6 +740,10 @@ section form input[type="button"] {
     flex-direction:row;
 }
 
+.populaires .carte_hebergement_paysage .taille-image {
+    min-height: 27vh;
+}    
+
 .populaires .carte_hebergement_paysage {
     margin-bottom: 10px;
     width: auto;
