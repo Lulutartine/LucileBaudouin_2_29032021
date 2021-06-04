@@ -116,15 +116,12 @@ padding: 0px;
 }
 
 section form ul {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F2F2F2;
-    border-radius: 15px;
     width:23%;
 }
 
 .section_recherche form ul li:first-child {
     background-color: #F2F2F2;
+    border: #F2F2F2 solid 1px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding:14px 14px 14px 14px;
@@ -133,6 +130,7 @@ section form ul {
 .section_recherche form ul li:nth-of-type(2) {
     display: inline-flex;
     align-items: center;
+    border: #F2F2F2 solid 1px;
 }
 
 section form input[type="search"] {
@@ -243,6 +241,7 @@ section div.info {
     border-radius: 1.5rem;
     padding: 30px;
     width: 64%;
+    margin-right: 2px;
 }
 
 #hebergements h2 {
@@ -278,6 +277,7 @@ section div.info {
 
 .carte_hebergement_portrait .taille-image {
     width: 100%;
+    max-height: 15vh;
     height: 14vh;
     overflow: hidden;
 }
@@ -340,6 +340,7 @@ section div.info {
 
 .populaires .taille-image {
     width: 37%;
+    max-height: 15vh;
     height: 17vh;
     overflow: hidden;
 }
@@ -406,13 +407,14 @@ section div.info {
 .bloc_cartes_activites .image_activite_taille {
     overflow: hidden;
     border-radius: 1.5rem 1.5rem 0rem 0rem;
-    height: 58vh;
+    max-height: 50vh;
+    height: 53vh;
 }
 
-.col-2-top .image_activite_taille { height: 25vh;}
-.col-2-bottom .image_activite_taille { height: 17vh;}
-.col-4-top .image_activite_taille { height: 21vh;}
-.col-4-bottom .image_activite_taille { height: 23vh;}
+.col-2-top .image_activite_taille { height: 25vh; max-height: 25vh;}
+.col-2-bottom .image_activite_taille { height: 17vh; max-height: 17vh;}
+.col-4-top .image_activite_taille { height: 21vh; max-height: 21vh;}
+.col-4-bottom .image_activite_taille { height: 20vh; max-height: 20vh;}
 
 .bloc_cartes_activites img {
     height: 100%;
@@ -462,7 +464,7 @@ footer {
     
 
                                             /* talette */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 body {
     font-size: 12px;
     }       
@@ -532,7 +534,8 @@ section ul.filtres {
 }
 
 .populaires .carte_hebergement_paysage .taille-image {
-    max-height: 17vh;
+    min-height: 10vh;
+    max-height: 12vh;
 }
 
 #hebergements {
@@ -554,8 +557,9 @@ section ul.filtres {
     margin: 0;
 }
 
-#hebergements .taille-image {
-    max-height: 13vh;
+.carte_hebergement_portrait .taille-image {
+    min-height: 10vh;
+    max-height: 12vh;
 }
 
 
@@ -569,23 +573,34 @@ section ul.filtres {
 }
 
 .bloc_cartes_activites > * {
-    width: 45%;
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .bloc_cartes_activites .col-2, .bloc_cartes_activites .col-4 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    width: 60%;
 }
+
+.bloc_cartes_activites .col-2, .bloc_cartes_activites .col-4 { 
+    width: 65%;
+}
+
+.bloc_cartes_activites .col-2 .col-2-top {width: 50%;margin-right: 20px;}
+.bloc_cartes_activites .col-2 .col-2-bottom {width: 50%;}
+.bloc_cartes_activites .col-4 .col-4-top {width: 50%;margin-right: 20px;}
+.bloc_cartes_activites .col-4 .col-4-bottom {width: 50%;}
 
 .bloc_cartes_activites .image_activite_taille {
-    height: 40vh;
+    max-height: 18vh;
 }
 
-.col-2-top .image_activite_taille { height: 15vh;}
-.col-2-bottom .image_activite_taille { height: 15vh;}
-.col-4-top .image_activite_taille { height: 15vh;}
-.col-4-bottom .image_activite_taille { height: 15vh;}
+.col-2-top .image_activite_taille { height: 18vh;} 
+.col-2-bottom .image_activite_taille { height: 18vh;}
+.col-4-top .image_activite_taille { height: 18vh;} 
+.col-4-bottom .image_activite_taille { height: 18vh;}
 
 
 footer {
@@ -700,6 +715,8 @@ header nav li:hover {
 section form ul {
     justify-content: space-between;
     width: auto;
+    border: #f2f2f2 solid 1px;
+    border-radius: 15px;
 }
 
 section form input[type="search"] {
@@ -711,6 +728,10 @@ section form input[type="search"] {
     padding: 14px;
 }
 
+.section_recherche form ul li:nth-of-type(2) {
+    border: none;
+}
+
 section form input[type="button"] {
     display: none;
 }
@@ -720,6 +741,7 @@ section form input[type="button"] {
     background-color: #0065FC;
     color: white;
     padding: 14px;
+    border: #0065FC solid 1px;
     border-radius: 12px;
 }
 
@@ -741,7 +763,8 @@ section form input[type="button"] {
 }
 
 .populaires .carte_hebergement_paysage .taille-image {
-    min-height: 27vh;
+    min-height: 14vh;
+    max-height: 16vh;
 }    
 
 .populaires .carte_hebergement_paysage {
@@ -767,7 +790,8 @@ section form input[type="button"] {
 }
 
 .carte_hebergement_portrait .taille-image {
-    min-height: 21vh;
+    min-height: 14vh;
+    max-height: 16vh;
 }
                         /* activites */
 .bloc_cartes_activites {
@@ -783,11 +807,17 @@ section form input[type="button"] {
 .bloc_cartes_activites .col-2, .bloc_cartes_activites .col-4 {
     margin-bottom: 30px;
     flex-direction: column;
+    width: 100%;
 }
 
 .col-2-top , .col-4-top {
     margin-bottom: 30px;
 }
+
+.bloc_cartes_activites .col-2 .col-2-top, .bloc_cartes_activites .col-2 .col-2-bottom, .bloc_cartes_activites .col-4 .col-4-top, .bloc_cartes_activites .col-4 .col-4-bottom {
+    width: auto; 
+    margin-right: 0;
+} 
 
 .col-4 {
     margin-bottom: 25px;
@@ -798,7 +828,8 @@ section form input[type="button"] {
 }
 
 .bloc_cartes_activites .image_activite_taille {
-    height: 22vh;
+    min-height: 16vh;
+    max-height: 18vh;
 }
 
 footer {
